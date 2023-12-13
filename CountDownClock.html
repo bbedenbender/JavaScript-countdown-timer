@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <!-- Add Bootstrap CSS link -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <link rel="stylesheet" href="countdownclock.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="jumbotron text-center">
+                    <h1><b>DOOM CLOCK</b></h1>
+                    <p>Randomly Decide a Countdown</p> 
+                </div>
+                <!-- Add dripping background element -->
+                <div class="dripping-background"></div>
+                <div id="countdown-container">
+                    <h1 id="days" class="display-4">0</h1>
+                    <p class="lead">Days</p>
+                    <h1 id="hours" class="display-4">0</h1>
+                    <p class="lead">Hours</p>
+                    <h1 id="minutes" class="display-4">0</h1>
+                    <p class="lead">Minutes</p>
+                    <h4 id="seconds" class="display-4">0</h4>
+                    <p class="lead">Seconds</p>
+                    <h4 id="mseconds" class="display-4">0</h4>
+                    <p class="lead">Milliseconds</p>
+                </div>
+                <div class="row justify-content-center mt-3">
+                    <button id="start-button" class="btn btn-warning mx-2" onclick="startCountdown()">Start</button>
+                    <button id="stop-button" class="btn btn-danger mx-2" onclick="stopCountdown()">Stop</button>
+                    <button id="reset-button" class="btn btn-primary mx-2" onclick="resetCountdown()">Reset</button>
+                    <button id="random-button" class="btn btn-info mx-2" onclick="changeFate()">Change <em>Fate</em></button>
+                </div>
+                <div class="container-fluid">
+                    <br>
+                    <p id="reset-message" class="lead"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JS and Popper.js scripts (required for Bootstrap components) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="CountdownTimer.js"></script>
+
+    <!-- Ensure the script runs after the DOM is fully loaded -->
+    <script>
+        // Start the initial countdown
+        startCountdown();
+    </script>
+</body>
+</html>

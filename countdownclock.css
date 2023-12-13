@@ -1,0 +1,44 @@
+/* Custom styles for the countdown container */
+#countdown-container {
+    background: linear-gradient(to bottom, #222, #111);
+    color: #950e04;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative; /* Added for relative positioning */
+}
+
+.jumbotron {
+    background-color: #950e04; 
+    color: #000000;
+    margin-top: 25%; /* Add 25% top margin */
+}
+
+h1 {
+    font-family: "Audiowide", sans-serif;
+}
+
+/* Liquid dripping effect */
+.dripping-background {
+    font-family: Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#message-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+/* Center and bold the reset message */
+#reset-message {
+    text-align: center;
+    font-weight: bold;
+}
